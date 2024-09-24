@@ -58,4 +58,4 @@ python get_wiki_pages.py --total_pages 10 --id_text_path wiki_ita.txt --page_lis
 ```
 
 **License**
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
