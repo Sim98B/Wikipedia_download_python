@@ -25,9 +25,37 @@ First, clone the repository to your local machine:
 ```bash
 git clone https://github.com/your-username/wiki-page-downloader.git
 cd wiki-page-downloader
+```
 
-### 2. Running the script
+### 2. Install Requirements
+You can install the required dependencies by running the following command:
+```bash
+pip install -r requirements.txt
+```
 
+### 3. Running the script
 To run the script, open a terminal and navigate to the project directory. You can execute the script with the following command:
 ```bash
 python get_wiki_pages.py
+```
+
+### 4. Modifying Parameters
+You can modify how many random Wikipedia pages you want to download and set different paths for the output files. The script provides the following parameters:
+	•	total_pages: Number of Wikipedia pages to download (default is 10).
+	•	id_text_path: Path to save the downloaded page summaries (default is wiki_ita.txt).
+	•	page_list_path: Path to store the list of downloaded page titles (default is page_list.txt).
+ 	•	language
+
+### 5. 	Output
+  •	The script generates a wiki_ita.txt file containing the titles and summaries of the downloaded Wikipedia pages.
+	•	A separate page_list.txt file is maintained, containing the titles of all downloaded pages to prevent re-downloading duplicates.
+
+### 6. Cleaning the text file
+The script will also clean up the text file by ensuring that only two newlines (\n\n) are used between entries. This helps maintain a clean, readable format for the downloaded content.
+**Example Command**
+```bash
+python get_wiki_pages.py --total_pages 10 --id_text_path wiki_ita.txt --page_list_path page_list.txt
+```
+
+**License**
+This project is licensed under the MIT License - see the LICENSE file for details.
