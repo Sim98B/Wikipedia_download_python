@@ -25,3 +25,9 @@ First, clone the repository to your local machine:
 ```bash
 git clone https://github.com/your-username/wiki-page-downloader.git
 cd wiki-page-downloader
+
+### 2. Running the script
+
+To run the script, open a terminal and navigate to the project directory. You can execute the script with the following command:
+```bash
+python get_wiki_pages.py
